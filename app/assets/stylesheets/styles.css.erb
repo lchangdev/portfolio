@@ -1,0 +1,106 @@
+html,
+body {
+  height: 100%;
+}
+
+.body-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ----------- navbar ----------- */
+
+.navbar-container {
+  height: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+  z-index: 1;
+}
+
+.left-navbar {
+  height: 80px;
+}
+
+.right-navbar {
+  background-color: white;
+  height: 80px;
+}
+
+.right-navbar:hover {
+  background-color: black;
+}
+
+#navbar-menu {
+  height: 100%;
+  position: absolute;
+}
+
+.navbar-brand-container {
+  padding-top: 20px;
+}
+
+/* ----------- carousel ----------- */
+
+#carousel-container {
+  z-index: 0;
+  position: absolute;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel,
+.item,
+.active,
+.carousel-inner,
+.fill {
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+}
+
+.carousel-inner {
+  padding-top: 80px;
+}
+
+#carousel-image1 {
+  background: url('<%= asset_path("test1.jpg") %>') no-repeat left center;
+  background-size: cover;
+}
+
+#carousel-image2 {
+  background: url('<%= asset_path("test2.jpg") %>') no-repeat left center;
+  background-size: cover;
+}
+
+#carousel-image3 {
+  background: url('<%= asset_path("test3.jpg") %>') no-repeat left center;
+  background-size: cover;
+}
+/* faster sliding speed */
+.carousel-inner > .item {
+    -webkit-transition: 0.3s ease-in-out left;
+    -moz-transition: 0.3s ease-in-out left;
+    -o-transition: 0.3s ease-in-out left;
+    transition: 0.3s ease-in-out left;
+}
+
+/* ----------- media queries ----------- */
+
+/* ----- mobile ----- */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ----- tablet ----- */
+@media (max-width: 992px) {
+
+}
+
+/* ----- desktop ----- */
+@media (min-width: 992px) {
+}
