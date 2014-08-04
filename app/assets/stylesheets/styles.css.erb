@@ -1,89 +1,262 @@
 html,
 body {
   height: 100%;
+  font-family: 'Lato';
+  font-weight: 300;
 }
 
 .body-container {
-  padding-left: 0;
-  padding-right: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 100%;
 }
 
-/* ----------- navbar ----------- */
+a {
+  color: black;
+}
+
+/* ----------- navbar/menu ----------- */
 
 .navbar-container {
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+}
+
+.navbar-container,
+.left-navbar,
+.right-navbar,
+.navbar-brand-container {
   height: 80px;
+}
+
+.navbar-container,
+.left-navbar,
+.right-navbar {
   padding-left: 0px;
   padding-right: 0px;
-  z-index: 1;
-}
-
-.left-navbar {
-  height: 80px;
-}
-
-.right-navbar {
-  background-color: white;
-  height: 80px;
-}
-
-.right-navbar:hover {
-  background-color: black;
-}
-
-#navbar-menu {
-  height: 100%;
-  position: absolute;
 }
 
 .navbar-brand-container {
-  padding-top: 20px;
+  padding-top: 30px;
+  border-bottom: 1px solid #D24D57;
 }
 
-/* ----------- carousel ----------- */
-
-#carousel-container {
-  z-index: 0;
-  position: absolute;
-  padding-left: 0;
-  padding-right: 0;
+.menu-item {
+  font-size: 40px;
 }
 
-.carousel,
-.item,
-.active,
-.carousel-inner,
-.fill {
+.menu-info-item {
+  font-size: 15px;
+}
+
+.menu-item,
+.menu-info-item {
+  list-style-type: none;
+}
+
+.menu-btn {
+  color: black;
+  background-color: #D24D57;
+  text-align: left;
   height: 100%;
+  border-radius: 0px;
+  border: none;
 }
 
-.fill {
-  width: 100%;
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none;
 }
 
-.carousel-inner {
+.menu-btn:hover,
+#menu {
+  background-color: #D24D57;
+}
+
+.logo,
+.navbar-text {
+  font-size: 15px;
+}
+
+#menu {
+  height: 100%;
+  z-index: 0;
+  position: fixed;
+  padding-top: 100px;
+}
+
+.menu-info-item {
+  line-height: 10px;
+}
+
+/* ----------- works#home ----------- */
+
+.header-container {
   padding-top: 80px;
 }
 
-#carousel-image1 {
-  background: url('<%= asset_path("test1.jpg") %>') no-repeat left center;
-  background-size: cover;
+.jumbotron {
+  height: 400px;
+  background-color: white;
 }
 
-#carousel-image2 {
-  background: url('<%= asset_path("test2.jpg") %>') no-repeat left center;
-  background-size: cover;
+#homepage-header {
+  font-size: 3em;
+}
+/* ----------- works#index ----------- */
+
+.work-container {
+  padding-top: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-#carousel-image3 {
-  background: url('<%= asset_path("test3.jpg") %>') no-repeat left center;
-  background-size: cover;
+.piece1,
+.piece2,
+.piece3,
+.piece4 {
+  height: 400px;
+  z-index: -1;
 }
-/* faster sliding speed */
-.carousel-inner > .item {
-    -webkit-transition: 0.3s ease-in-out left;
-    -moz-transition: 0.3s ease-in-out left;
-    -o-transition: 0.3s ease-in-out left;
-    transition: 0.3s ease-in-out left;
+
+.piece1 {
+  background-color: tomato;
+}
+
+.piece2 {
+  background-color: grey;
+}
+
+.piece3 {
+  background-color: orange;
+}
+
+.piece4 {
+  background-color: lightblue;
+}
+
+/* ----------- works#about ----------- */
+
+.about-container {
+  padding-top: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.about-summary-container {
+  text-align: center;
+  padding-top: 30px;
+  height: 400px;
+  z-index: -1;
+}
+
+.portrait {
+  border: 1px solid #D24D57;
+  height: 300px;
+  width: 300px;
+}
+
+.grid-text {
+  color: white;
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7,
+.grid8,
+.grid9 {
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+  z-index: -1;
+}
+
+.grid1 {
+  background-color: #DB0A5B;
+}
+
+.grid2 {
+  background-color: #F64747;
+}
+
+.grid3 {
+  background-color: #F1A9A0;
+}
+
+.grid4 {
+  background-color: #E08283;
+}
+
+.grid5 {
+  background-color: #D2527F;
+}
+
+.grid6 {
+  background-color: #D24D57;
+}
+
+.grid7 {
+  background-color: #EF4836;
+}
+
+.grid8 {
+  background-color: #D91E18;
+}
+
+.grid9 {
+  background-color: #C0392B;
+}
+
+/* ----------- works#contact ----------- */
+.contact-container {
+  padding-top: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.map-container,
+.contact-info-container {
+  z-index: -1;
+  height: 400px;
+}
+
+.map-container {
+  background-color: tomato;
+}
+
+.contact-info-container {
+  background-color: lightblue;
+}
+
+/* ----------- UNDER CONSTRUCTION ----------- */
+
+.lawrence {
+  height: auto;
+}
+/* ----------- UNDER CONSTRUCTION ----------- */
+
+/* ----------- icons ----------- */
+
+.marker-img,
+.email-img,
+.phone-img {
+  height: 25px;
+  width: 25px;
+}
+
+.list-img {
+  height: 40px;
+  width: 40px;
 }
 
 /* ----------- media queries ----------- */

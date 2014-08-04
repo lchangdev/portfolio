@@ -12,55 +12,39 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="col-xs-12 navbar-container">
-  <div class="col-xs-6 left-navbar">
-    <div class="col-xs-12 navbar-brand-container">
-      <h4 id="navbar-brand">Lawrence Chang</h4>
-    </div>
-  </div>
-  <div class="col-xs-6 right-navbar">
-    <div class="col-xs-12 navbar-brand-container">
-      <h4 id="navbar-brand">Menu</h4>
-    </div>
-  </div>
-  <div id="navbar-menu" class="col-xs-6 col-xs-offset-6 navbar-menu">
-  </div>
-</div>
 
-  <div class="container fill" id="carousel-container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="fill" id="carousel-image1">
-            <div class="container">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="fill" id="carousel-image2">
-            <div class="container">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="fill" id="carousel-image3">
-            <div class="container">
-            </div>
-          </div>
-        </div>
+  <div class="col-xs-12 navbar-container">
+    <div class="col-xs-6 left-navbar">
+      <div class="col-xs-12 navbar-brand-container">
+        <%= link_to 'Lawrence Chang', root_path, class: 'logo' %>
       </div>
     </div>
-    <%= yield %>
+    <div class="col-xs-6 right-navbar">
+      <button type="button" class="btn menu-btn col-xs-12" data-toggle="collapse" data-target="#menu" data-text-swap="&#9650; Menu">
+        <span class="direction">&#9660;</span>
+        <span>Menu</span>
+      </button>
+    </div>
   </div>
 
+  <div class="col-xs-6 col-xs-offset-6 collapse" id="menu">
+    <ul>
+      <li class="menu-item"><%= link_to 'Portfolio', works_path %></li>
+      <li class="menu-item"><%= link_to 'About', about_path %></li>
+      <li class="menu-item"><%= link_to 'Contact', contact_path %></li>
+    </ul>
+    <br>
+    <br>
+    <ul>
+      <li class="menu-info-item"><%= image_tag('marker.png', class: 'marker-img') %> Orange County, CA.</li>
+      <li class="menu-info-item"><%= image_tag('phone.png', class: 'phone-img') %> 714.787.9690</li>
+      <li class="menu-info-item"><%= image_tag('email.png', class: 'email-img') %> lchangdev@gmail.com</li>
+    </ul>
+  </div>
+
+  <div class="body-container">
+    <%= yield %>
+  </div>
 
   <%= javascript_include_tag 'application' %>
 </body>
