@@ -1,7 +1,4 @@
 $(document).ready(function(){
-  $('.carousel').carousel({
-    interval: 10000
-  });
 
   $('.menu-btn').on('click', function(){
     var e = $(this);
@@ -11,5 +8,14 @@ $(document).ready(function(){
       e.data(" ", e.text());
       e.text(e.data("text-swap"));
     }
+  });
+
+  // buttons
+  $('.menu-item, .logo').mouseenter(function(){
+    $(this).fadeTo('medium', 0.6);
+  });
+
+  $('.menu-item, .logo').mouseleave(function(){
+    $(this).fadeTo('medium', 1);
   });
 });

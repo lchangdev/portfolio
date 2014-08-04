@@ -12,15 +12,20 @@ body {
 }
 
 a {
-  color: black;
+  color: #222222;
 }
 
-/* ----------- navbar/menu ----------- */
+a:hover {
+  text-decoration: none;
+}
+
+/* ----------- navbar ----------- */
 
 .navbar-container {
   z-index: 2;
   position: fixed;
   background-color: white;
+  opacity: 0.97;
 }
 
 .navbar-container,
@@ -39,24 +44,14 @@ a {
 
 .navbar-brand-container {
   padding-top: 30px;
-  border-bottom: 1px solid #D24D57;
+  border-bottom: 1px solid #E08283;
 }
 
-.menu-item {
-  font-size: 40px;
-}
-
-.menu-info-item {
-  font-size: 15px;
-}
-
-.menu-item,
-.menu-info-item {
-  list-style-type: none;
+.logo:hover {
+  color: #D24D57;
 }
 
 .menu-btn {
-  color: black;
   background-color: #D24D57;
   text-align: left;
   height: 100%;
@@ -68,25 +63,37 @@ a {
   outline: none;
 }
 
-.menu-btn:hover,
+/* ------ menu ------ */
+
 #menu {
   background-color: #D24D57;
-}
-
-.logo,
-.navbar-text {
-  font-size: 15px;
-}
-
-#menu {
   height: 100%;
   z-index: 1;
   position: fixed;
   padding-top: 100px;
+  opacity: 0.97;
 }
 
+.menu-item {
+  font-size: 40px;
+}
+
+.menu-item,
+.menu-item a,
+.menu-info-item,
+.menu-btn {
+  color: #222222;
+}
+
+.menu-item,
 .menu-info-item {
-  line-height: 10px;
+  list-style-type: none;
+}
+
+.logo,
+.navbar-text,
+.menu-info-item {
+  font-size: 15px;
 }
 
 /* ----------- works#home ----------- */
@@ -252,13 +259,6 @@ a {
 .contact-info-container {
   background-color: lightblue;
 }
-
-/* ----------- UNDER CONSTRUCTION ----------- */
-
-.lawrence {
-  height: auto;
-}
-/* ----------- UNDER CONSTRUCTION ----------- */
 
 /* ----------- icons ----------- */
 
