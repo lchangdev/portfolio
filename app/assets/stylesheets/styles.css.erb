@@ -122,7 +122,9 @@ a {
 }
 
 .piece1 {
-  background-color: tomato;
+  background: url('<%= asset_path("zeto.png") %>') no-repeat left center;
+  background-size: cover;
+  border: none;
 }
 
 .piece2 {
@@ -145,13 +147,13 @@ a {
   padding-right: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  z-index: -1;
 }
 
 .about-summary-container {
   text-align: center;
   padding-top: 30px;
   height: 400px;
-  z-index: -1;
 }
 
 .portrait {
@@ -176,7 +178,6 @@ a {
   height: 100px;
   text-align: center;
   padding-top: 40px;
-  z-index: -1;
 }
 
 .grid1 {
@@ -271,7 +272,10 @@ a {
 
 /* ----- tablet ----- */
 @media (max-width: 992px) {
-
+  .portrait {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 /* ----- desktop ----- */

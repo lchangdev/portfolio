@@ -1,18 +1,15 @@
 class WorksController < ApplicationController
 
-  def index
+  def home
   end
 
-  def home
+  def design
   end
 
   def about
   end
 
   def contact
-  end
-
-  def zeto
   end
 
 end
