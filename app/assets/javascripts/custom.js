@@ -11,11 +11,19 @@ $(document).ready(function(){
   });
 
   // buttons
-  $('.menu-item, .logo').mouseenter(function(){
+  $('.menu-item, .logo, .arrow, .home-enter-btn, .social-link').mouseenter(function(){
     $(this).fadeTo('medium', 0.6);
   });
 
-  $('.menu-item, .logo').mouseleave(function(){
+  $('.menu-item, .logo, .arrow, .home-enter-btn, .social-link').mouseleave(function(){
     $(this).fadeTo('medium', 1);
+  });
+
+  $('.piece-circle').mouseenter(function(){
+    $(this).fadeTo('medium', 1);
+  });
+
+  $('.piece-circle').mouseleave(function(){
+    $(this).fadeTo('medium', 0.7);
   });
 });

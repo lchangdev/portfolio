@@ -1,34 +1,23 @@
-<div class="row work-container">
-  <div class="col-md-12 page-header-container">
+<div class="row design-container">
+  <div class="col-sm-4 left-arrow-container">
+  <%= link_to image_tag('left_arrow.png', class: 'arrow-img'), code_path, class: 'arrow' %>
+  </div>
+  <div class="col-sm-4 page-header-container">
     <h1><span id="page-header">DESIGN</span></h1>
   </div>
-  <div class="col-sm-6 piece1">
-    <div class="col-sm-12 zeto-container">
+  <div class="col-sm-4 right-arrow-container">
+    <%= link_to image_tag('right_arrow.png', class: 'arrow-img'), about_path, class: 'arrow' %>
+  </div>
+
+  <div class="col-sm-6 piece-container" id="piece1">
+    <div class="piece-circle">
+      <h2 class="piece-header">zeto</h2>
     </div>
   </div>
-  <div class="col-sm-6 piece2">
-    <div class="col-sm-12">
-      sixtwelve
-    </div>
-  </div>
-  <div class="col-sm-6 piece3">
-    <div class="col-sm-12">
-      minesweeper
-    </div>
-  </div>
-  <div class="col-sm-6 piece4">
-    <div class="col-sm-12">
-      rubygem gallery
-    </div>
-  </div>
-  <div class="col-sm-6 piece1">
-    <div class="col-sm-12">
-      zeto
-    </div>
-  </div>
-  <div class="col-sm-6 piece2">
-    <div class="col-sm-12">
-      sixtwelve
+
+  <div class="col-sm-6 piece-container" id="piece2">
+    <div class="piece-circle">
+      <h2 class="piece-header">sixtwelve</h2>
     </div>
   </div>
 </div>

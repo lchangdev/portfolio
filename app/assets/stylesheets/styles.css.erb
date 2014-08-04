@@ -19,10 +19,16 @@ a:hover {
   text-decoration: none;
 }
 
+.left-arrow-container,
+.right-arrow-container {
+  text-align: center;
+  padding-top: 60px;
+}
+
 /* ----------- navbar ----------- */
 
 .navbar-container {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   background-color: white;
   opacity: 0.97;
@@ -68,7 +74,7 @@ a:hover {
 #menu {
   background-color: #D24D57;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   padding-top: 100px;
   opacity: 0.97;
@@ -81,7 +87,8 @@ a:hover {
 .menu-item,
 .menu-item a,
 .menu-info-item,
-.menu-btn {
+.menu-btn,
+.social-link:hover {
   color: #222222;
 }
 
@@ -94,6 +101,10 @@ a:hover {
 .navbar-text,
 .menu-info-item {
   font-size: 15px;
+}
+
+.menu-info-item {
+  padding-top: 8px;
 }
 
 /* ----------- works#home ----------- */
@@ -110,9 +121,10 @@ a:hover {
 #page-header {
   font-size: 3em;
 }
+
 /* ----------- works#index ----------- */
 
-.work-container {
+.design-container {
   padding-top: 80px;
   padding-left: 0px;
   padding-right: 0px;
@@ -120,30 +132,37 @@ a:hover {
   margin-right: 0px;
 }
 
-.piece1,
-.piece2,
-.piece3,
-.piece4 {
+.piece-container {
   height: 400px;
-  z-index: -1;
+  z-index: 1;
+  text-align: center;
+  padding-top: 120px;
 }
 
-.piece1 {
+.piece-header {
+  color: #222222;
+}
+
+.piece-circle {
+  border: 1px solid #D24D57;
+  border-radius: 100%;
+  width: 175px;
+  height: 175px;
+  text-align: center;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+}
+
+#piece1 {
   background: url('<%= asset_path("zeto.png") %>') no-repeat left center;
   background-size: cover;
-  border: none;
 }
 
-.piece2 {
-  background-color: grey;
-}
-
-.piece3 {
-  background-color: orange;
-}
-
-.piece4 {
-  background-color: lightblue;
+#piece2 {
+  background: url('<%= asset_path("sixtwelve2.png") %>') no-repeat left center;
+  background-size: cover;
 }
 
 /* ----------- works#about ----------- */
@@ -159,20 +178,28 @@ a:hover {
 
 .page-header-container {
   text-align: center;
-  padding-top: 10px;
   z-index: -1;
 }
 
 .about-summary-container {
   text-align: center;
   padding-top: 30px;
-  height: 400px;
+  height: 800px;
+}
+
+.about-summary-container p {
+  text-align: justify;
 }
 
 .portrait {
   border: 1px solid #D24D57;
   height: 300px;
   width: 300px;
+}
+
+.paragraph-link {
+  text-decoration: underline;
+  color: #D24D57;
 }
 
 .grid-text {
@@ -252,7 +279,6 @@ a:hover {
 }
 
 .map-container {
-  background-color: tomato;
   padding-left: 0px;
 }
 
@@ -269,9 +295,21 @@ a:hover {
   width: 25px;
 }
 
+.twitter-img,
+.linkedin-img,
+.github-img {
+  height: 30px;
+  width: 30px;
+}
+
 .list-img {
   height: 40px;
   width: 40px;
+}
+
+.arrow-img {
+  height: 50px;
+  width: 50px;
 }
 
 /* ----------- media queries ----------- */
@@ -286,10 +324,7 @@ a:hover {
 
 /* ----- tablet ----- */
 @media (max-width: 992px) {
-  .portrait {
-    height: 250px;
-    width: 250px;
-  }
+
 }
 
 /* ----- desktop ----- */
