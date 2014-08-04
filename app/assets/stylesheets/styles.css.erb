@@ -18,7 +18,7 @@ a {
 /* ----------- navbar/menu ----------- */
 
 .navbar-container {
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   background-color: white;
 }
@@ -80,7 +80,7 @@ a {
 
 #menu {
   height: 100%;
-  z-index: 0;
+  z-index: 1;
   position: fixed;
   padding-top: 100px;
 }
@@ -100,7 +100,7 @@ a {
   background-color: white;
 }
 
-#homepage-header {
+#page-header {
   font-size: 3em;
 }
 /* ----------- works#index ----------- */
@@ -147,6 +147,12 @@ a {
   padding-right: 0px;
   margin-left: 0px;
   margin-right: 0px;
+  z-index: -1;
+}
+
+.page-header-container {
+  text-align: center;
+  padding-top: 10px;
   z-index: -1;
 }
 
@@ -225,14 +231,22 @@ a {
   margin-right: 0px;
 }
 
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+}
+
 .map-container,
 .contact-info-container {
-  z-index: -1;
+  z-index: 0;
   height: 400px;
 }
 
 .map-container {
   background-color: tomato;
+  padding-left: 0px;
 }
 
 .contact-info-container {
