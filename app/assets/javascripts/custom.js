@@ -19,11 +19,11 @@ $(document).ready(function(){
     $(this).fadeTo('medium', 1);
   });
 
-  $('.piece-circle').mouseenter(function(){
+  $('.piece-btn').mouseenter(function(){
     $(this).fadeTo('medium', 1);
   });
 
-  $('.piece-circle').mouseleave(function(){
+  $('.piece-btn').mouseleave(function(){
     $(this).fadeTo('medium', 0.7);
   });
 });

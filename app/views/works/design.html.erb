@@ -10,14 +10,50 @@
   </div>
 
   <div class="col-sm-6 piece-container" id="piece1">
-    <div class="piece-circle">
+    <button class="btn piece-btn" data-toggle="modal" data-target="#zetoModal">
       <h2 class="piece-header">zeto</h2>
-    </div>
+    </button>
   </div>
 
   <div class="col-sm-6 piece-container" id="piece2">
     <div class="piece-circle">
       <h2 class="piece-header">sixtwelve</h2>
+    </div>
+  </div>
+  <!-- Modals -->
+
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="zetoModal" tabindex="-1" role="dialog" aria-labelledby="zetoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="zetoModalLabel">zeto</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row test-row">
+            <div class="col-md-4 test-div1">
+              <h1>Summary</h1>
+              <p>Description of zeto goes here</p>
+            </div>
+            <div class="col-md-8 col-md-offset-4 test-div2">
+              <div class="row">
+                <div class="col-md-12 piece-img1-container">
+                </div>
+                <div class="col-md-12 piece-img2-container">
+                </div>
+                <div class="col-md-12 piece-img3-container">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

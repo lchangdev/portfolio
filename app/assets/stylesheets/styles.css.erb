@@ -111,18 +111,32 @@ a:hover {
 
 .header-container {
   padding-top: 80px;
+  height: 100%;
+  background: url('<%= asset_path("homepage_background.jpg") %>') no-repeat left center;
+  background-size: cover;
 }
 
 .jumbotron {
   height: 400px;
-  background-color: white;
+  background: transparent;
+
 }
 
 #page-header {
   font-size: 3em;
+  color: #D24D57;
 }
 
-/* ----------- works#index ----------- */
+.container p,
+.footer p {
+  color: white;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+/* ----------- works#design ----------- */
 
 .design-container {
   padding-top: 80px;
@@ -143,16 +157,16 @@ a:hover {
   color: #222222;
 }
 
-.piece-circle {
+.piece-btn {
   border: 1px solid #D24D57;
   border-radius: 100%;
   width: 175px;
   height: 175px;
   text-align: center;
-  padding-top: 50px;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.7;
+  background-color: transparent;
 }
 
 #piece1 {
@@ -165,6 +179,39 @@ a:hover {
   background-size: cover;
 }
 
+.test-row {
+  background-color: orange;
+  height: 100%;
+}
+
+.test-div1 {
+  background-color: tomato;
+  z-index: 1;
+  position: fixed;
+}
+
+.test-div2 {
+  z-index: 0;
+  background-color: lightblue;
+}
+
+.piece-img1-container {
+  background: url('<%= asset_path("zeto.png") %>') no-repeat left center;
+  background-size: cover;
+  height: 500px;
+}
+
+.piece-img1-container {
+  background: url('<%= asset_path("sixtwelve.png") %>') no-repeat left center;
+  background-size: cover;
+  height: 500px;
+}
+
+.piece-img1-container {
+  background: url('<%= asset_path("sixtwelve2.png") %>') no-repeat left center;
+  background-size: cover;
+  height: 500px;
+}
 /* ----------- works#about ----------- */
 
 .about-container {
