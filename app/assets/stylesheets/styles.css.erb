@@ -136,6 +136,7 @@ a:hover {
   position: absolute;
   bottom: 0;
 }
+
 /* ----------- works#design ----------- */
 
 .design-container {
@@ -179,37 +180,49 @@ a:hover {
   background-size: cover;
 }
 
-.test-row {
-  background-color: orange;
-  height: 100%;
+.piece-summary-container {
+  text-align: center;
 }
 
-.test-div1 {
-  background-color: tomato;
-  z-index: 1;
-  position: fixed;
+.piece-summary-container p {
+  text-align: justify;
 }
 
-.test-div2 {
-  z-index: 0;
-  background-color: lightblue;
-}
-
-.piece-img1-container {
+.piece1-img1-container {
   background: url('<%= asset_path("zeto.png") %>') no-repeat left center;
-  background-size: cover;
-  height: 500px;
 }
 
-.piece-img1-container {
+.piece1-img2-container {
+  background: url('<%= asset_path("zeto2.png") %>') no-repeat left center;
+}
+
+.piece1-img3-container {
+  background: url('<%= asset_path("zeto3.png") %>') no-repeat left center;
+}
+
+.piece1-img4-container {
+  background: url('<%= asset_path("zeto4.png") %>') no-repeat left center;
+}
+
+.piece2-img1-container {
   background: url('<%= asset_path("sixtwelve.png") %>') no-repeat left center;
-  background-size: cover;
-  height: 500px;
 }
 
-.piece-img1-container {
+.piece2-img2-container {
   background: url('<%= asset_path("sixtwelve2.png") %>') no-repeat left center;
-  background-size: cover;
+}
+
+.piece2-img3-container {
+  background: url('<%= asset_path("sixtwelve3.png") %>') no-repeat left center;
+}
+.piece1-img1-container,
+.piece1-img2-container,
+.piece1-img3-container,
+.piece1-img4-container,
+.piece2-img1-container,
+.piece2-img2-container,
+.piece2-img3-container {
+  background-size: contain;
   height: 500px;
 }
 /* ----------- works#about ----------- */
@@ -231,7 +244,7 @@ a:hover {
 .about-summary-container {
   text-align: center;
   padding-top: 30px;
-  height: 800px;
+  height: 600px;
 }
 
 .about-summary-container p {

@@ -16,15 +16,12 @@
   </div>
 
   <div class="col-sm-6 piece-container" id="piece2">
-    <div class="piece-circle">
+    <button class="btn piece-btn" data-toggle="modal" data-target="#sixTwelveModal">
       <h2 class="piece-header">sixtwelve</h2>
-    </div>
+    </button>
   </div>
   <!-- Modals -->
 
-  <!-- Button trigger modal -->
-
-  <!-- Modal -->
   <div class="modal fade" id="zetoModal" tabindex="-1" role="dialog" aria-labelledby="zetoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -33,20 +30,20 @@
           <h4 class="modal-title" id="zetoModalLabel">zeto</h4>
         </div>
         <div class="modal-body">
-          <div class="row test-row">
-            <div class="col-md-4 test-div1">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <h1>Summary</h1>
-              <p>Description of zeto goes here</p>
+              <p>
+                My most recent project is called zeto. The problem I wanted to address with zeto was that Launch Academy, a 10 week immersive bootcamp, had no cohesive network for all students to connect with one another. So I created zeto, a medium for past, present and future students of Launch Academy to connect and more importantly stay connected. Zeto was built with Rails, Ruby, HTML, CSS, SASS, JavaScript, jQuery, Ajax along with Facebook omniauth, Mapbox and JSON. The github repository link is: <a href="github.com/lchangdev/zeto-la"><span class="paragraph-link">zeto github repository</span></a>. The live web application can be found here: <a href="http://zeto-la.herokuapp.com"><span class="paragraph-link">zeto</span></a>.
+              </p>
             </div>
-            <div class="col-md-8 col-md-offset-4 test-div2">
-              <div class="row">
-                <div class="col-md-12 piece-img1-container">
-                </div>
-                <div class="col-md-12 piece-img2-container">
-                </div>
-                <div class="col-md-12 piece-img3-container">
-                </div>
-              </div>
+            <div class="col-xs-10 col-xs-offset-1 piece1-img1-container">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 piece1-img2-container">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 piece1-img3-container">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 piece1-img4-container">
             </div>
           </div>
         </div>
@@ -56,4 +53,34 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="sixTwelveModal" tabindex="-1" role="dialog" aria-labelledby="sixTwelveModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="sixTwelveModalLabel">sixtwelve</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <h1>Summary</h1>
+              <p>
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 piece2-img1-container">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 piece2-img2-container">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 piece2-img3-container">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
