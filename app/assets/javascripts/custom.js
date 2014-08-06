@@ -11,11 +11,11 @@ $(document).ready(function(){
   });
 
   // buttons
-  $('.menu-item, .logo, .arrow, .home-enter-btn, .social-link').mouseenter(function(){
+  $('.menu-item, .logo, .arrow, .home-enter-btn, .social-link, .contact-email').mouseenter(function(){
     $(this).fadeTo('medium', 0.6);
   });
 
-  $('.menu-item, .logo, .arrow, .home-enter-btn, .social-link').mouseleave(function(){
+  $('.menu-item, .logo, .arrow, .home-enter-btn, .social-link, .contact-email').mouseleave(function(){
     $(this).fadeTo('medium', 1);
   });
 

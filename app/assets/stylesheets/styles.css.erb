@@ -125,6 +125,7 @@ a:hover {
 #page-header {
   font-size: 3em;
   color: #D24D57;
+  font-weight: 100;
 }
 
 .container p,
@@ -148,7 +149,12 @@ a:hover {
 }
 
 #minesweeper {
-  background: url('<%= asset_path("minesweeper.png") %>') no-repeat left center;
+  background: url('<%= asset_path("minesweeper.jpg") %>') no-repeat left center;
+  background-size: cover;
+}
+
+#blackjack {
+  background: url('<%= asset_path("blackjack2.jpg") %>') no-repeat left center;
   background-size: cover;
 }
 /* ----------- works#design ----------- */
@@ -173,7 +179,7 @@ a:hover {
 }
 
 .piece-btn {
-  border: 1px solid #D24D57;
+  border: 3px solid #D24D57;
   border-radius: 100%;
   width: 175px;
   height: 175px;
@@ -190,7 +196,7 @@ a:hover {
 }
 
 #piece2 {
-  background: url('<%= asset_path("sixtwelve2.png") %>') no-repeat left center;
+  background: url('<%= asset_path("sixtwelve2.jpg") %>') no-repeat left center;
   background-size: cover;
 }
 
@@ -258,7 +264,7 @@ a:hover {
 .about-summary-container {
   text-align: center;
   padding-top: 30px;
-  height: 600px;
+  height: 700px;
 }
 
 .about-summary-container p {
@@ -331,6 +337,7 @@ a:hover {
 }
 
 /* ----------- works#contact ----------- */
+
 .contact-container {
   padding-top: 80px;
   padding-left: 0px;
@@ -357,7 +364,21 @@ a:hover {
 }
 
 .contact-info-container {
-  background-color: lightblue;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contact-info-container h1 {
+  font-size: 4em;
+}
+
+.contact-email {
+  text-decoration: underline;
+}
+
+.contact-email:hover {
+  color: #D24D57;
+  text-decoration: underline;
 }
 
 /* ----------- icons ----------- */
