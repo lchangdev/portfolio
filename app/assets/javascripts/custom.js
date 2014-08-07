@@ -20,10 +20,12 @@ $(document).ready(function(){
   });
 
   $('.piece-btn').mouseenter(function(){
+    $(this).css("background-color", "transparent");
     $(this).fadeTo('medium', 1);
   });
 
   $('.piece-btn').mouseleave(function(){
     $(this).fadeTo('medium', 0.7);
+    $(this).css("background-color", "#F2F1EF");
   });
 });

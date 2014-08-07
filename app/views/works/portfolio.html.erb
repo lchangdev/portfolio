@@ -1,25 +1,38 @@
-<div class="row design-container">
+<div class="row portfolio-container">
   <div class="col-sm-4 left-arrow-container">
-  <%= link_to image_tag('left_arrow.png', class: 'arrow-img'), code_path, class: 'arrow' %>
+  <%= link_to image_tag('left_arrow.png', class: 'arrow-img'), root_path, class: 'arrow' %>
   </div>
   <div class="col-sm-4 page-header-container">
-    <h1><span id="page-header">DESIGN</span></h1>
+    <h1><span id="page-header">portfolio</span></h1>
   </div>
   <div class="col-sm-4 right-arrow-container">
     <%= link_to image_tag('right_arrow.png', class: 'arrow-img'), about_path, class: 'arrow' %>
   </div>
 
-  <div class="col-sm-6 piece-container" id="piece1">
+  <div class="col-sm-6 piece-container" id="zeto">
     <button class="btn piece-btn" data-toggle="modal" data-target="#zetoModal">
       <h2 class="piece-header">zeto</h2>
     </button>
   </div>
 
-  <div class="col-sm-6 piece-container" id="piece2">
+  <div class="col-sm-6 piece-container" id="sixtwelve">
     <button class="btn piece-btn" data-toggle="modal" data-target="#sixTwelveModal">
       <h2 class="piece-header">sixtwelve</h2>
     </button>
   </div>
+
+  <div class="col-sm-6 piece-container" id="minesweeper">
+    <button class="btn piece-btn" data-toggle="modal" data-target="#minesweeperModal">
+      <h3 class="piece-header">minesweeper</h3>
+    </button>
+  </div>
+
+  <div class="col-sm-6 piece-container" id="blackjack">
+    <button class="btn piece-btn" data-toggle="modal" data-target="#blackJackModal">
+      <h2 class="piece-header">blackjack</h2>
+    </button>
+  </div>
+
   <!-- Modals -->
 
   <div class="modal fade" id="zetoModal" tabindex="-1" role="dialog" aria-labelledby="zetoModalLabel" aria-hidden="true">
@@ -42,28 +55,28 @@
                 Users are able to see a list of all past, present and future launchers as well as hiriing partners and launch staff. Features on zeto include a search bar which allows users to search for launchers and posts via city or state. Also, users are able to sort by name or cohort.
               </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 piece1-img1-container">
+            <div class="col-xs-10 col-xs-offset-1 zeto-gallery1">
             </div>
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
                 Rather than going with a simple show page, I wanted to implement bootstraps modals to be each users show page. This was technically challenging since I could not use rails magic to create a show page for each user. I solved this problem by iterating through each user and creating a unique modal id with the user id. Then to ensure that each marker had the correct modal, I included the modal id within the javascript loop that created each popup.
               </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 piece1-img2-container">
+            <div class="col-xs-10 col-xs-offset-1 zeto-gallery2">
             </div>
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
                 Zeto is also a platform for users to share events that are happening within their respective cities as well as post any job leads that they may come across. Posts are easily identifiable on the map by different color markers. Users are also able to view all posts, posts they are authors of and events they are attending.
               </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 piece1-img3-container">
+            <div class="col-xs-10 col-xs-offset-1 zeto-gallery3">
             </div>
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
                 Detail page of a event post or a job lead. Only authors of the post will be able to edit or delete the respective post.
               </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 piece1-img4-container">
+            <div class="col-xs-10 col-xs-offset-1 zeto-gallery4">
             </div>
           </div>
         </div>
@@ -94,21 +107,78 @@
                 Members are given access to a group after an admin or moderator approves of their request to join. Once admitted to a group, members can see other members, share prayer requests and comment on those requests.
               </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 piece2-img1-container">
+            <div class="col-xs-10 col-xs-offset-1 sixtwelve-gallery1">
             </div>
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
                 sixtwelve uses Facebook omniauth for user authentication. For email, I used mandrill for production.
               </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 piece2-img2-container">
+            <div class="col-xs-10 col-xs-offset-1 sixtwelve-gallery2">
             </div>
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
                 Looking for a web developer position!
               </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 piece2-img3-container">
+            <div class="col-xs-10 col-xs-offset-1 sixtwelve-gallery3">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="minesweeperModal" tabindex="-1" role="dialog" aria-labelledby="minesweeperModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="minesweeperModalLabel">minesweeper</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <h1>Summary</h1>
+              <p>
+                Recreated minesweeper using Gosu library to handle the graphics and input code. Provided with the setup code and a bare-bones implementation of the Minefield class, I was tasked to create a functional game. Minesweeper was built with Gosu and Ruby.
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 minesweeper-gallery1">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 minesweeper-gallery2">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="blackJackModal" tabindex="-1" role="dialog" aria-labelledby="blackJackModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="blackJackModalLabel">Black Jack</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <h1>Summary</h1>
+              <p>
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1">
             </div>
           </div>
         </div>

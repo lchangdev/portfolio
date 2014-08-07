@@ -20,23 +20,20 @@
       </div>
     </div>
     <div class="col-xs-6 right-navbar">
-      <button type="button" class="btn menu-btn col-xs-12" data-toggle="collapse" data-target="#menu" data-text-swap="&#9650; Menu">
-        <span class="direction">&#9660;</span>
-        <span>Menu</span>
+      <button type="button" class="btn menu-btn col-xs-12" data-toggle="collapse" data-target="#menu">
+        <span id="menu-text">Menu</span>
       </button>
     </div>
   </div>
 
   <div class="col-xs-6 col-xs-offset-6 collapse" id="menu">
     <ul>
-      <li class="menu-item"><%= link_to 'Code', code_path %></li>
-      <li class="menu-item"><%= link_to 'Design', design_path %></li>
+      <li class="menu-item"><%= link_to 'Portfolio', portfolio_path %></li>
       <li class="menu-item"><%= link_to 'About', about_path %></li>
       <li class="menu-item"><%= link_to 'Contact', contact_path %></li>
     </ul>
     <br>
     <ul>
-      <li class="menu-info-item"><%= image_tag('marker.png', class: 'marker-img') %> Orange County, CA.</li>
       <li class="menu-info-item"><%= image_tag('phone.png', class: 'phone-img') %> 714.787.9690</li>
       <li class="menu-info-item"><%= image_tag('email.png', class: 'email-img') %> lchangdev@gmail.com</li>
     </ul>

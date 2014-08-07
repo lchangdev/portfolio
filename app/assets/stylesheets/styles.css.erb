@@ -25,6 +25,12 @@ a:hover {
   padding-top: 60px;
 }
 
+#page-header {
+  font-size: 3em;
+  color: #D24D57;
+  font-weight: 100;
+}
+
 /* ----------- navbar ----------- */
 
 .navbar-container {
@@ -98,6 +104,7 @@ a:hover {
 }
 
 .logo,
+#menu-text,
 .navbar-text,
 .menu-info-item {
   font-size: 15px;
@@ -122,15 +129,19 @@ a:hover {
 
 }
 
-#page-header {
+#homepage-header {
   font-size: 3em;
   color: #D24D57;
-  font-weight: 100;
+  font-weight: 200;
 }
 
-.container p,
+#tagline {
+  font-size: 2em;
+  color: #FFECDB;
+}
+
 .footer p {
-  color: white;
+  color: #FFECDB;
 }
 
 .footer {
@@ -138,28 +149,9 @@ a:hover {
   bottom: 0;
 }
 
-/* ----------- works#code ----------- */
+/* ----------- works#portfolio ----------- */
 
-.code-container {
-  padding-top: 80px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-#minesweeper {
-  background: url('<%= asset_path("minesweeper.jpg") %>') no-repeat left center;
-  background-size: cover;
-}
-
-#blackjack {
-  background: url('<%= asset_path("blackjack2.jpg") %>') no-repeat left center;
-  background-size: cover;
-}
-/* ----------- works#design ----------- */
-
-.design-container {
+.portfolio-container {
   padding-top: 80px;
   padding-left: 0px;
   padding-right: 0px;
@@ -174,32 +166,6 @@ a:hover {
   padding-top: 120px;
 }
 
-.piece-header {
-  color: #222222;
-}
-
-.piece-btn {
-  border: 3px solid #D24D57;
-  border-radius: 100%;
-  width: 175px;
-  height: 175px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.7;
-  background-color: transparent;
-}
-
-#piece1 {
-  background: url('<%= asset_path("zeto.png") %>') no-repeat left center;
-  background-size: cover;
-}
-
-#piece2 {
-  background: url('<%= asset_path("sixtwelve2.jpg") %>') no-repeat left center;
-  background-size: cover;
-}
-
 .piece-summary-container {
   text-align: center;
 }
@@ -208,43 +174,87 @@ a:hover {
   text-align: justify;
 }
 
-.piece1-img1-container {
-  background: url('<%= asset_path("zeto.png") %>') no-repeat left center;
+.piece-header {
+  color: #222222;
 }
 
-.piece1-img2-container {
-  background: url('<%= asset_path("zeto2.png") %>') no-repeat left center;
+.piece-btn {
+  border: 2px solid #D24D57;
+  border-radius: 100%;
+  width: 175px;
+  height: 175px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+  background-color: #F2F1EF;
 }
 
-.piece1-img3-container {
-  background: url('<%= asset_path("zeto3.png") %>') no-repeat left center;
+#zeto {
+  background: url('<%= asset_path("zetousers.jpg") %>') no-repeat left center;
+  background-size: cover;
 }
 
-.piece1-img4-container {
-  background: url('<%= asset_path("zeto4.png") %>') no-repeat left center;
+#sixtwelve {
+  background: url('<%= asset_path("sixtwelvecover.jpg") %>') no-repeat left center;
+  background-size: cover;
 }
 
-.piece2-img1-container {
-  background: url('<%= asset_path("sixtwelve.png") %>') no-repeat left center;
+#minesweeper {
+  background: url('<%= asset_path("minesweepercover.jpg") %>') no-repeat left center;
+  background-size: cover;
 }
 
-.piece2-img2-container {
-  background: url('<%= asset_path("sixtwelve2.png") %>') no-repeat left center;
+#blackjack {
+  background: url('<%= asset_path("blackjackcover.jpg") %>') no-repeat left center;
+  background-size: cover;
 }
 
-.piece2-img3-container {
-  background: url('<%= asset_path("sixtwelve3.png") %>') no-repeat left center;
+.zeto-gallery1 {
+  background: url('<%= asset_path("zetousers.jpg") %>') no-repeat left center;
 }
-.piece1-img1-container,
-.piece1-img2-container,
-.piece1-img3-container,
-.piece1-img4-container,
-.piece2-img1-container,
-.piece2-img2-container,
-.piece2-img3-container {
+
+.zeto-gallery2 {
+  background: url('<%= asset_path("zetoshow.jpg") %>') no-repeat left center;
+}
+
+.zeto-gallery3 {
+  background: url('<%= asset_path("zetoposts.jpg") %>') no-repeat left center;
+}
+
+.zeto-gallery4 {
+  background: url('<%= asset_path("zetopostsdetails.jpg") %>') no-repeat left center;
+}
+
+.sixtwelve-gallery1 {
+  background: url('<%= asset_path("sixtwelvegroups.jpg") %>') no-repeat left center;
+}
+
+.sixtwelve-gallery2 {
+  background: url('<%= asset_path("sixtwelvehomepage.jpg") %>') no-repeat left center;
+}
+
+.sixtwelve-gallery3 {
+  background: url('<%= asset_path("sixtwelveshow.jpg") %>') no-repeat left center;
+}
+
+.minesweeper-gallery1 {
+  background: url('<%= asset_path("minesweeper.jpg") %>') no-repeat left center;
+  background-size: cover;
+}
+
+.zeto-gallery1,
+.zeto-gallery2,
+.zeto-gallery3,
+.zeto-gallery4,
+.sixtwelve-gallery1,
+.sixtwelve-gallery2,
+.sixtwelve-gallery3,
+.minesweeper-gallery1 {
   background-size: contain;
   height: 500px;
 }
+
 /* ----------- works#about ----------- */
 
 .about-container {
@@ -280,6 +290,11 @@ a:hover {
 .paragraph-link {
   text-decoration: underline;
   color: #D24D57;
+}
+
+.grid-container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .grid-text {
@@ -383,7 +398,6 @@ a:hover {
 
 /* ----------- icons ----------- */
 
-.marker-img,
 .email-img,
 .phone-img {
   height: 25px;
@@ -402,9 +416,14 @@ a:hover {
   width: 40px;
 }
 
-.arrow-img {
+.arrow-img,
+.marker-img {
   height: 50px;
   width: 50px;
+}
+
+.marker-img {
+  margin-bottom: 20px;
 }
 
 /* ----------- media queries ----------- */
