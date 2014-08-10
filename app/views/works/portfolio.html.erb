@@ -49,8 +49,6 @@
               <p>
                 My most recent project is called zeto. The problem I wanted to address with zeto was that Launch Academy, a 10 week immersive bootcamp, had no cohesive network for all students to connect with one another. So I created zeto, a medium for past, present and future students of Launch Academy to connect and more importantly stay connected. Zeto was built with Rails, Ruby, HTML, CSS, SASS, JavaScript, jQuery, Ajax along with Facebook omniauth, Mapbox and JSON. The github repository link is: <a href="github.com/lchangdev/zeto-la"><span class="paragraph-link">zeto github repository</span></a>. The live web application can be found here: <a href="http://zeto-la.herokuapp.com"><span class="paragraph-link">zeto</span></a>.
               </p>
-            </div>
-            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
                 Users are able to see a list of all past, present and future launchers as well as hiriing partners and launch staff. Features on zeto include a search bar which allows users to search for launchers and posts via city or state. Also, users are able to sort by name or cohort.
               </p>
@@ -73,7 +71,7 @@
             </div>
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
-                Detail page of a event post or a job lead. Only authors of the post will be able to edit or delete the respective post.
+                Users can come to this page to see all of the details regarding event pots or job leads. Only authors of the post will be able to edit or delete the respective post.
               </p>
             </div>
             <div class="col-xs-10 col-xs-offset-1 zeto-gallery4">
@@ -101,8 +99,6 @@
               <p>
                 I sought to create my first web application just after a week of learning Ruby on Rails. I was initially approached with a problem that a church in Southern California was having regarding the ability to share prayers amongst groups within a single church. sixtwelve was created to address this issue for them. The goal for sixtwelve was to create a medium for groups to share their prayers exclusively with their group members. When planning the user stories and database for this web app, I took into consideration scalability for this web application.
               </p>
-            </div>
-            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
                 Members are given access to a group after an admin or moderator approves of their request to join. Once admitted to a group, members can see other members, share prayer requests and comment on those requests.
               </p>
@@ -111,17 +107,24 @@
             </div>
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
-                sixtwelve uses Facebook omniauth for user authentication. For email, I used mandrill for production.
+                sixtwelve uses Facebook omniauth for user authentication. For email, I used mandrill for production. Users are able to see all groups that are present however will only see the enter link after their request to join the respective group has been verified.
               </p>
             </div>
             <div class="col-xs-10 col-xs-offset-1 sixtwelve-gallery2">
             </div>
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <p>
-                Looking for a web developer position!
+                Users are able to comment on prayer requests. Authors of comments are able to delete their comment only. Likewise the author of the prayer is able to edit or delete their prayer request.
               </p>
             </div>
             <div class="col-xs-10 col-xs-offset-1 sixtwelve-gallery3">
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                ER Diagram for sixtwelve.
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 sixtwelve-gallery4">
             </div>
           </div>
         </div>
@@ -149,7 +152,26 @@
             </div>
             <div class="col-xs-10 col-xs-offset-1 minesweeper-gallery1">
             </div>
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                Provided with just the bare bones of the minesweeper game, the first step I took was to create the map with a complex data structure: an array of arrays of hashes. The rows, columns and mine count are defined when the Minefield object is instantiated. Each block is a hash with keys and values of status defaulted to false, which checks to see if a block has been cleared, and mine set to 3 different values: 0, 1, 2 where 0 is no mine, 1 is a mine, 2 denoted.
+              </p>
+            </div>
             <div class="col-xs-10 col-xs-offset-1 minesweeper-gallery2">
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                Created a validation any_mines_denoted? method to see if any mines were denoted. This method is used to verify if the player has lost the game. The adjacent_mines method displays the amount of mines with integers displayed to the player to assist with the game. The cell_cleared? method will continue to clear a block until it reaches a mine. If a mine is clicked then the mine value will be changed to 2, in which case the game is over.
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 minesweeper-gallery3">
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                Created validation all_cells_cleared? method to find when all cells have been cleared and once cleared prompt the player that they have won. Another validation method contains_mine? checks to see if the block exists and if it does checks to see if the value is 1 or 2 representing a mine and a denoted mine.
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 minesweeper-gallery4">
             </div>
           </div>
         </div>
@@ -172,13 +194,48 @@
             <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
               <h1>Summary</h1>
               <p>
+                Implementing Object Oriented Programming, I was tasked to create a black jack game that could be played through the terminal. Several user stories that were required included allowing players to hit and stand as well as having dealer hit until score is atleast 17. This game was built with Ruby.
+              </p>
+              <p>
+                Card class. Within the Card class, I created the cards with 4 methods which include being able to call the rank and suit of a card, validate for face cards and give cards values except for the ace.
               </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-10 col-xs-offset-1 blackjack-gallery1">
             </div>
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                Deck class. Within the Deck class, the Deck is created with an iteration through the rank array and suits array within the Card class then shuffled. Also when a Card is drawn it is deleted from the Deck instance to ensure there are no duplications of a Card.
+              </p>
             </div>
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-10 col-xs-offset-1 blackjack-gallery2">
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                Hand class. Within the Hand class, I created several methods which includes a method to count the number of aces within a given hand, sum of the score of a given hand without aces and the score of a given hand relative to the sum of the rest of the hand. The last method was created to set the value of aces, 1 or 11, dependent on the score of the hand.
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 blackjack-gallery3">
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                Initializing black jack game. A new Deck and Hand instance is created. 2 cards for the dealer is dealt with one shown.
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 blackjack-gallery4">
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                Player conditionals. User is prompted to hit or stay. Conditional is set dependent on user input.
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 blackjack-gallery5">
+            </div>
+            <div class="col-xs-8 col-xs-offset-2 piece-summary-container">
+              <p>
+                Dealer conditionals. New  Hand instance is created for the dealer with the prior 3 cards drawn in the beginning of the game. While the dealer's score is less than 17, dealer must continue to hit. The two hands are then compared and there are 3 outcomes: player wins, dealer wins or they push.
+              </p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 blackjack-gallery6">
             </div>
           </div>
         </div>
@@ -188,5 +245,4 @@
       </div>
     </div>
   </div>
-
 </div>

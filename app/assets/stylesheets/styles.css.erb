@@ -168,10 +168,13 @@ a:hover {
 
 .piece-summary-container {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .piece-summary-container p {
   text-align: justify;
+  color: #D24D57;
 }
 
 .piece-header {
@@ -201,12 +204,12 @@ a:hover {
 }
 
 #minesweeper {
-  background: url('<%= asset_path("minesweepercover.jpg") %>') no-repeat left center;
+  background: url('<%= asset_path("minesweeper/minesweepercover.jpg") %>') no-repeat left center;
   background-size: cover;
 }
 
 #blackjack {
-  background: url('<%= asset_path("blackjackcover.jpg") %>') no-repeat left center;
+  background: url('<%= asset_path("blackjack/blackjackcover.jpg") %>') no-repeat left center;
   background-size: cover;
 }
 
@@ -238,9 +241,48 @@ a:hover {
   background: url('<%= asset_path("sixtwelveshow.jpg") %>') no-repeat left center;
 }
 
+.sixtwelve-gallery4 {
+  background: url('<%= asset_path("sixtwelve_er_diagram.jpg") %>') no-repeat left center;
+}
+
 .minesweeper-gallery1 {
-  background: url('<%= asset_path("minesweeper.jpg") %>') no-repeat left center;
-  background-size: cover;
+  background: url('<%= asset_path("minesweeper/minesweeper.jpg") %>') no-repeat left center;
+}
+
+.minesweeper-gallery2 {
+  background: url('<%= asset_path("minesweeper/minesweeper1.png") %>') no-repeat left center;
+}
+
+.minesweeper-gallery3 {
+  background: url('<%= asset_path("minesweeper/minesweeper2.png") %>') no-repeat left center;
+}
+
+.minesweeper-gallery4 {
+  background: url('<%= asset_path("minesweeper/minesweeper3.png") %>') no-repeat left center;
+}
+
+.blackjack-gallery1 {
+  background: url('<%= asset_path("blackjack/blackjack_card.png") %>') no-repeat left center;
+}
+
+.blackjack-gallery2 {
+  background: url('<%= asset_path("blackjack/blackjack_deck.png") %>') no-repeat left center;
+}
+
+.blackjack-gallery3 {
+  background: url('<%= asset_path("blackjack/blackjack_hand.png") %>') no-repeat left center;
+}
+
+.blackjack-gallery4 {
+  background: url('<%= asset_path("blackjack/blackjack_initialize.png") %>') no-repeat left center;
+}
+
+.blackjack-gallery5 {
+  background: url('<%= asset_path("blackjack/blackjack_player_conditionals.png") %>') no-repeat left center;
+}
+
+.blackjack-gallery6 {
+  background: url('<%= asset_path("blackjack/blackjack_dealer_conditionals.png") %>') no-repeat left center;
 }
 
 .zeto-gallery1,
@@ -250,7 +292,19 @@ a:hover {
 .sixtwelve-gallery1,
 .sixtwelve-gallery2,
 .sixtwelve-gallery3,
-.minesweeper-gallery1 {
+.sixtwelve-gallery4,
+.minesweeper-gallery1,
+.minesweeper-gallery2,
+.minesweeper-gallery3,
+.minesweeper-gallery4,
+.minesweeper-gallery5,
+.minesweeper-gallery6,
+.blackjack-gallery1,
+.blackjack-gallery2,
+.blackjack-gallery3,
+.blackjack-gallery4,
+.blackjack-gallery5,
+.blackjack-gallery6 {
   background-size: contain;
   height: 500px;
 }
@@ -289,7 +343,7 @@ a:hover {
 
 .paragraph-link {
   text-decoration: underline;
-  color: #D24D57;
+  color: #222222;
 }
 
 .grid-container {
