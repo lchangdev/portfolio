@@ -31,6 +31,10 @@ a:hover {
   font-weight: 100;
 }
 
+.page-navigation-container {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 /* ----------- navbar ----------- */
 
 .navbar-container {
@@ -121,12 +125,12 @@ a:hover {
   height: 100%;
   background: url('<%= asset_path("homepage_background.jpg") %>') no-repeat left center;
   background-size: cover;
+  overflow: auto;
 }
 
 .jumbotron {
   height: 400px;
   background: transparent;
-
 }
 
 #homepage-header {
@@ -138,15 +142,6 @@ a:hover {
 #tagline {
   font-size: 2em;
   color: #FFECDB;
-}
-
-.footer p {
-  color: #FFECDB;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
 }
 
 /* ----------- works#portfolio ----------- */
@@ -323,12 +318,14 @@ a:hover {
 .page-header-container {
   text-align: center;
   z-index: -1;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .about-summary-container {
   text-align: center;
   padding-top: 30px;
-  height: 700px;
+  height: 800px;
 }
 
 .about-summary-container p {
@@ -484,17 +481,73 @@ a:hover {
 
 /* ----- mobile ----- */
 @media (max-width: 768px) {
-  body {
-    padding-left: 0;
-    padding-right: 0;
+  .jumbotron {
+    text-align: center
+  }
+
+  .left-navbar {
+    display: none;
+  }
+
+  .right-navbar {
+    width: 100%;
+  }
+
+  #menu {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  #page-header {
+    font-size: 40px;
+  }
+
+  .page-header-container {
+    padding-top: 40px;
+  }
+
+  .left-arrow-container,
+  .right-arrow-container {
+    padding-bottom: 20px;
+  }
+
+  .contact-info-container h1 {
+  font-size: 2.8em;
   }
 }
 
 /* ----- tablet ----- */
 @media (max-width: 992px) {
+  .jumbotron {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  #homepage-header {
+    font-size: 1.9em;
+  }
+
+  #tagline {
+    font-size: 1.5em;
+  }
+
+  .home-enter-btn {
+    height: 50px;
+    width: 50px;
+  }
+
+  .left-arrow-container,
+  .right-arrow-container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .about-summary-container {
+    height: 700px;
+  }
 }
 
 /* ----- desktop ----- */
-@media (min-width: 992px) {
+@media (max-width: 1200px) {
+
 }

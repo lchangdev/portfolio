@@ -1,14 +1,15 @@
 <div class="row portfolio-container">
-  <div class="col-sm-4 left-arrow-container">
-  <%= link_to image_tag('icons/left_arrow.png', class: 'arrow-img'), root_path, class: 'arrow' %>
+  <div class="row page-navigation-container">
+    <div class="col-xs-2 left-arrow-container">
+    <%= link_to image_tag('icons/left_arrow.png', class: 'arrow-img'), root_path, class: 'arrow' %>
+    </div>
+    <div class="col-xs-8 page-header-container">
+      <h1><span id="page-header">portfolio</span></h1>
+    </div>
+    <div class="col-xs-2 right-arrow-container">
+      <%= link_to image_tag('icons/right_arrow.png', class: 'arrow-img'), about_path, class: 'arrow' %>
+    </div>
   </div>
-  <div class="col-sm-4 page-header-container">
-    <h1><span id="page-header">portfolio</span></h1>
-  </div>
-  <div class="col-sm-4 right-arrow-container">
-    <%= link_to image_tag('icons/right_arrow.png', class: 'arrow-img'), about_path, class: 'arrow' %>
-  </div>
-
   <div class="col-sm-6 piece-container" id="zeto">
     <button class="btn piece-btn" data-toggle="modal" data-target="#zetoModal">
       <h2 class="piece-header">zeto</h2>
